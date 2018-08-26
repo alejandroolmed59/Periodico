@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario</title>
 </head>
+
 <body>
     <h1>Suscribirse</h1>
     <form action="suscribirse.html" method="GET">
@@ -17,7 +19,7 @@
             <label for="birth">Fecha de cumpleaños</label>
             <input type="date" name="birth" id="birth" min="2000-01-01" max="2018-12-31" required>
 
-            
+
         </fieldset>
         <fieldset>
             <legend>Cuenta</legend>
@@ -26,7 +28,8 @@
             <input type="text" name="correo" id="correo" placeholder="carlosSantana69@gmail.com" required>
 
             <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" id="contraseña" tittle="Minimo 5 caracteres" placeholder="*******" required pattern=".{5,15}" title="Entre 5 y 15 caracteres">
+            <input type="password" name="contraseña" id="contraseña" tittle="Minimo 5 caracteres" placeholder="*******" required pattern=".{5,15}"
+                title="Entre 5 y 15 caracteres">
 
             <label for="verficador">Verificar Contraseña</label>
             <input type="password" name="verficador" id="verficador" placeholder="*******" required pattern=".{5,15}" title="Entre 5 y 15 caracteres">
@@ -42,7 +45,7 @@
         </fieldset>
         <fieldset>
             <legend>Informacion de contacto</legend>
-            
+
             <label for="tel">Numero de telefono celular</label>
             <input type="tel" name="tel" id="tel" placeholder="7638-3016" pattern="\d{4}[\-]\d{4}" required>
 
@@ -52,7 +55,7 @@
         <br>
         <img src="local/diario.jpg" alt="Periodico" width="400px">
         <input type="submit" value="Suscrbirse!">
-        <input type="reset" value="Cancelar">
+        <button onclick="location.href='inicio.html'" type="button">Cancelar</button>
     </form>
 </body>
 </html>
